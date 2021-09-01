@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tailwindcss learning</title>
+  
+  <script type="module" crossorigin src="/assets/index.43f17b97.js"></script>
+    <link rel="stylesheet" href="/assets/index.cc0c8feb.css">
+  </head>
+
+<body class="h-full">
+  <div class="h-full min-w-[320px] min-h-[568px]">
+    <div class="relative h-full">
+      <!-- slogan -->
+      <div class="px-4 py-5 text-center bg-zhihu-blue">
+        <!-- 按钮 -->
+        <div class="flex">
+          <button class="ml-auto text-white">&#x2715;</button>
+        </div>
+        <div class="text-2xl text-white">登录知乎</div>
+        <div class="text-white">发现更多可信赖的解答</div>
+      </div>
+      <!-- 主体 -->
+      <div class="px-4 py-3">
+        <form class="space-y-4">
+          <!-- 手机号码 -->
+          <div class="mb-2 border-b-2">
+            <div class="flex py-3">
+              <!-- 区号选择 -->
+              <div class="flex flex-none">
+                <!-- !FIXME: 这里 知乎原版的网页是使用的 一个 div 加上 一个 select 来共同实现区域切换的功能：比如，选中"美国 +1"，div 的内容显示的是 +1，而不是 选中的那些文字 -->
+                <select class="pr-2 outline-none appearance-none">
+                  <option value="美国 +1">美国 +1</option>
+                  <option value="美国 +2">美国 +2</option>
+                  <option value="美国 +3">美国 +3</option>
+                  <option value="美国 +4">美国 +4</option>
+                  <option value="美国 +5">美国 +5</option>
+                  <option value="美国 +6">美国 +6</option>
+                </select>
+                <svg class="ml-auto" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    d="M12 16.183l2.716-2.966a.757.757 0 0 1 1.064.001.738.738 0 0 1 0 1.052l-3.247 3.512a.758.758 0 0 1-1.064 0L8.22 14.27a.738.738 0 0 1 0-1.052.758.758 0 0 1 1.063 0L12 16.183zm0-9.365L9.284 9.782a.758.758 0 0 1-1.064 0 .738.738 0 0 1 0-1.052l3.248-3.512a.758.758 0 0 1 1.065 0L15.78 8.73a.738.738 0 0 1 0 1.052.757.757 0 0 1-1.063.001L12 6.818z"
+                    fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <!-- 分割线 -->
+              <span class="w-[1px] bg-gray-300 mx-4">&nbsp;</span>
+              <!-- 手机号码输入 -->
+              <input class="flex-auto outline-none" placeholder="输入手机号" type="text" name="phone" />
+            </div>
+          </div>
+          <!-- 验证码 -->
+          <div class="flex py-3 space-x-3">
+            <div class="flex-auto border-b-2 border-gray-200">
+              <input class="w-full py-2 outline-none" type="text" name="code" placeholder="输入6位验证码">
+            </div>
+            <button
+              class="flex-none px-2 py-2 mb-2 text-sm font-semibold text-gray-500 border-2 border-gray-300 rounded">发送验证码</button>
+          </div>
+          <!-- 提示区域和用户协议 -->
+          <div class="text-xs text-center text-gray-400">
+            <div>未注册手机验证后自动登录</div>
+            <div>注册即同意<a href="#" class="underline">《知乎协议》</a>&nbsp;<a href="#" class="underline">《隐私保护指引》</a></div>
+          </div>
+          <!-- 登录按钮 -->
+          <button class="w-full py-2 text-center text-white rounded bg-zhihu-blue">登录</button>
+          <!-- 两个其他按钮 -->
+          <div class="flex w-full text-[#376baa]">
+            <a href="#" class="mr-auto">密码登录</a>
+            <a href="#" class="ml-auto">需要帮助</a>
+          </div>
+        </form>
+      </div>
+      <!-- 注册新账号区域 -->
+      <div class="absolute bottom-0 flex items-center justify-center w-full py-5">
+        <ul class="space-y-3 text-[#376baa]">
+          <li>
+            <a href="#">注册社交帐号</a>
+          </li>
+          <li>
+            <a href="#">注册机构帐号</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
