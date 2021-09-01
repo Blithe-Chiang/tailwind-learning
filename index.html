@@ -28,9 +28,9 @@
           <div class="mb-2 border-b-2">
             <div class="flex py-3">
               <!-- 区号选择 -->
-              <div class="flex w-3/12">
+              <div class="flex flex-none">
                 <!-- !FIXME: 这里 知乎原版的网页是使用的 一个 div 加上 一个 select 来共同实现区域切换的功能：比如，选中"美国 +1"，div 的内容显示的是 +1，而不是 选中的那些文字 -->
-                <select>
+                <select class="pr-2 outline-none appearance-none">
                   <option value="美国 +1">美国 +1</option>
                   <option value="美国 +2">美国 +2</option>
                   <option value="美国 +3">美国 +3</option>
@@ -38,25 +38,25 @@
                   <option value="美国 +5">美国 +5</option>
                   <option value="美国 +6">美国 +6</option>
                 </select>
-                <!-- <svg class="ml-auto" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                <svg class="ml-auto" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
                   <path
                     d="M12 16.183l2.716-2.966a.757.757 0 0 1 1.064.001.738.738 0 0 1 0 1.052l-3.247 3.512a.758.758 0 0 1-1.064 0L8.22 14.27a.738.738 0 0 1 0-1.052.758.758 0 0 1 1.063 0L12 16.183zm0-9.365L9.284 9.782a.758.758 0 0 1-1.064 0 .738.738 0 0 1 0-1.052l3.248-3.512a.758.758 0 0 1 1.065 0L15.78 8.73a.738.738 0 0 1 0 1.052.757.757 0 0 1-1.063.001L12 6.818z"
                     fill-rule="evenodd"></path>
-                </svg> -->
+                </svg>
               </div>
               <!-- 分割线 -->
               <span class="w-[1px] bg-gray-300 mx-4">&nbsp;</span>
               <!-- 手机号码输入 -->
-              <input class="w-8/12 outline-none" placeholder="输入手机号" type="text" name="phone" />
+              <input class="flex-auto outline-none" placeholder="输入手机号" type="text" name="phone" />
             </div>
           </div>
           <!-- 验证码 -->
           <div class="flex py-3 space-x-3">
-            <div class="w-8/12 border-b-2 border-gray-200">
+            <div class="flex-auto border-b-2 border-gray-200">
               <input class="w-full py-2 outline-none" type="text" name="code" placeholder="输入6位验证码">
             </div>
             <button
-              class="w-4/12 px-2 py-2 mb-2 text-sm font-semibold text-gray-500 border-2 border-gray-300 rounded">发送验证码</button>
+              class="flex-none px-2 py-2 mb-2 text-sm font-semibold text-gray-500 border-2 border-gray-300 rounded">发送验证码</button>
           </div>
           <!-- 提示区域和用户协议 -->
           <div class="text-xs text-center text-gray-400">
