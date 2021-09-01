@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwindcss learning</title>
-    <link href="./css/tailwind.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-100">
-    <div class="max-w-md px-6 pt-5 mx-auto md:max-w-xl lg:max-w-3xl">
-      <img class="h-10" src="./img/logo.svg" alt="logo" />
+<html class="h-full" lang="en">
 
-      <!-- hero image -->
-      <img
-        class="mt-5 rounded-lg shadow-lg md:mt-7 lg:mt-8"
-        src="./img/beach-work.jpg"
-        alt="a woman work near a beach"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tailwindcss learning</title>
+  <link href="./css/tailwind.css" rel="stylesheet" />
+</head>
 
-      <h1
-        class="mt-5 text-2xl font-semibold text-gray-900  md:mt-7 lg:mt-8 lg:text-3xl"
-      >
-        You can work from anywhere.
-        <br class="hidden lg:inline" />
-        <span class="text-indigo-500">Take advantage of it.</span>
-      </h1>
+<body class="h-full">
+  <div class="h-full">
+    <div class="relative h-full bg-gray-300">
+      <!-- slogan -->
+      <div class="px-4 py-5 text-center bg-zhihu-blue">
+        <!-- 按钮 -->
+        <button class="absolute text-white right-3 top-2">x</button>
+        <div class="text-xl font-semibold text-white">登录知乎</div>
+        <div class="text-white">发现更多可信赖的解答</div>
+      </div>
+      <!-- 主体 -->
+      <div class="px-4 py-3 bg-gray-200">
+        <form class="space-y-3">
+          <!-- 手机号码 -->
+          <div class="flex border-b-2">
+            <div class="py-3 pr-4 border-r-2">+86</div>
+            <input class="w-full py-3" type="text" name="phone" />
+          </div>
+          <!-- 验证码 -->
+          <div class="flex">
+            <input class="w-full py-3" type="text" name="code">
+            <button class="py-3">发送验证码</button>
+          </div>
+        </form>
 
-      <p class="mt-5 text-gray-900 lg:text-lg">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-        perspiciatis praesentium! Cumque cupiditate quae fuga illo inventore
-        unde aspernatur deserunt dolore nam.
-      </p>
-
-      <div class="mt-5">
-        <a
-          href="#"
-          class="inline-block px-4 py-2 text-sm font-semibold tracking-wider text-white uppercase bg-indigo-500 rounded-lg shadow-lg "
-          >Book your escape</a
-        >
+      </div>
+      <!-- 注册新账号区域 -->
+      <div class="absolute bottom-0 flex items-center justify-center w-full py-5 bg-gray-200">
+        <ul class="space-y-3">
+          <li class="text-zhihu-blue">
+            <a href="#">注册社交帐号</a>
+          </li>
+          <li class="text-zhihu-blue">
+            <a href="#">注册机构帐号</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

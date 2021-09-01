@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'zhihu-blue': '#0066ff',
+      }
+    },
   },
   variants: {
     extend: {},
